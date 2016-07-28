@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker|Noto+Sans:400,700' rel='stylesheet'
+          type='text/css'>
+    <title>Perfect Holiday Destination</title>
+</head>
+<body class="project">
+
+    <header>
+        <h1 class="headline">Visit your dream destination</h1>
+
+        <button type="button" class="btn btn-success pull-right btn-lg private-guide " data-toggle="modal"
+                data-target="#myModal">
+            Your private guide
+        </button>
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">About me</h4>
+                    </div>
+                    <div class="modal-body">Hi!<br><br>
+                        My name is Anna and this is my very first site. It's about four places in the world which I want
+                        to visit.<br><br>
+                        I would like you to join me in my journey with HTML5, CSS3, Java Script, JQuery, RWD, Sass and
+                        Bootstrap.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body">
+        <aside class="sahara"><span>SAHARA</span></aside>
+        <aside class="amazon"><span>AMAZON</span></aside>
+        <aside class="arctic"><span>ARCTIC</span></aside>
+        <aside class="india"><span>INDIA</span></aside>
+    </div>
+
+    <div class="page page-sahara">
+
+        <div class="todo">
+            <h3>What do you need for your holiday?</h3>
+            <input placeholder="Make a shopping list" autocomplete="none" class="place"><br>
+            <button type="button" class="btn btn-primary add-button btn-xs">Add item</button>
+
+
+            <div class="todo-tasks-counter">Left: <span></span></div>
+
+            <div class="tasks">
+                <ul>
+                </ul>
+            </div>
+
+            <button type="button" class="btn btn-primary remove-done-button btn-xs">Remove things you bought</button>
+
+
+        </div>
+
+
+        <a href="#" class="back-button btn btn-primary btn-lg" role="button">Go back</a>
+
+    </div>
+
+    <div class="page page-amazon">
+
+        <div class="page-header animated bounceInLeft">
+            <h1>Meet the crew<br>
+                <small>Hover over the animals</small>
+            </h1>
+        </div>
+
+        <div class="animal1"
+
+
+             data-container="body"
+             data-toggle="popover"
+             data-placement="left"
+             data-trigger="hover"
+             data-html="true"
+             title="Jaguar"
+             data-content="Jaguars have the most powerful bite among cats, and their sharp teeth are able to pierce through the thick armor of their prey,
+             such as armadillos and turtles, as well as through skulls, directly piercing the brain. They can also dislocate necks with their strong jaws."
+
+        ></div>
+
+        <div class="animal2"
+
+             data-container="body"
+             data-toggle="popover"
+             data-placement="right"
+             data-trigger="hover"
+             data-html="true"
+             title="Black Caiman"
+             data-content="It does not hesitate to eat any other animal in the Amazon — whether monkeys, sloths, piranhas, wild pigs, giant otters, dogs, anacondas or other caimans.
+            Several attacks on humans have been recorded, although humans are usually only at risk from individuals over 13 feet (4 meters) long — the black caiman can grow up to 20 feet (6 meters) long."
+
+        ></div>
+        <div class="animal3"
+             data-container="body"
+             data-toggle="popover"
+             data-placement="right"
+             data-trigger="hover"
+             data-html="true"
+             title="Brazilian Wandering Spider"
+             data-content="The eight species of Brazilian wandering spider, all of which can be found in the Amazon rainforest, are considered by some to be the most venomous spiders on Earth.
+              Their venom, after all, can cause intense pain, which when left untreated, can cause paralysis and trouble breathing.
+             They are nocturnal, wandering across the ground at night in search of food."></div>
+
+        <div class="animal4"
+
+             data-container="body"
+             data-toggle="popover"
+             data-placement="left"
+             data-trigger="hover"
+             data-html="true"
+             title="Blue And Yellow Macaw"
+             data-content="Also known as Blue-and-gold Macaw, these beautiful birds can also live up to 50 years.
+             They reach a length (from the top of its head to the tip of its tail) of 84 cm (33 in) in size and weigh one kg. Just like other Macaws, the Blue-and-Gold macaw can learn to talk"
+        ></div>
+
+        <div class="animal5"
+
+
+             data-container="body"
+             data-toggle="popover"
+             data-placement="right"
+             data-trigger="hover"
+             data-html="true"
+             title="Poison Dart Frog"
+             data-content="Poison dart frogs are some of the most colorful creatures you’ll find in the Amazon rainforest, but beware. Their bright coloration is actually a warning:
+             “Touch me and you’re dead.” Indeed, poison dart frogs secrete a powerful poison through their skin, which if absorbed in large amounts, can cause heart failure within minutes."></div>
+
+
+        <a href="#" class="back-button btn btn-primary btn-lg" role="button">Go back</a>
+    </div>
+
+
+    <div class="page page-arctic">
+        <div class="well well-lg arctic-slider">Look..it's so cold here...<br>
+            Then maybe you'd rather consider Africa!
+        </div>
+
+        <div class="slider">
+
+            <ul>
+
+                <li><img src="./images/images-main/africa1.jpg"></li>
+                <li><img src="./images/images-main/africa2.jpg"></li>
+                <li><img src="./images/images-main/africa3.jpg"></li>
+                <li><img src="./images/images-main/africa4.jpg"></li>
+
+            </ul>
+            <button id="nextPicture"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+            <button id="prevPicture"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+        </div>
+
+        <a href="#" class="back-button btn btn-primary btn-lg" role="button">Go back</a>
+    </div>
+
+
+    <div class="page page-india">
+
+        <div class="holycow"
+             data-container="body"
+             data-toggle="popover"
+             data-placement="right"
+             data-trigger="hover"
+             data-html="true"
+             data-content="You can't touch me! I'm holy!">
+
+        </div>
+        <div class="well well-lg india-cow">In the oldest religion of the world, Hinduism, the cow is thought to be
+            sacred,
+            or deeply respected. <br>
+            Hindus do not worship cows, although they are held in high esteem.
+            The reason has to do with the cow's agricultural uses and gentle nature. <br>
+            Hindus rely heavily on cows for dairy products, for tilling fields, and for dung as a source of fuel and
+            fertilizer.
+            So, the cow is seen as a 'caretaker' or maternal figure.
+        </div>
+
+        <a href="#" class="back-button btn btn-primary btn-lg" role="button">Go back</a>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,393 @@
+@import "vars";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.project {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: white;
+
+}
+
+//Main elements
+
+.body {
+  display: flex;
+  flex: 1;
+
+}
+
+div.body aside {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+
+  span {
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 70px;
+    letter-spacing: 15px;
+    text-shadow: 0 0 10px white;
+
+  }
+
+  &.sahara {
+    //background-color: #f5951d;
+    background-image: url("../images/images-main/sahara-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  &.amazon {
+    //background-color: green;
+    background-image: url("../images/images-main/amazon-main-two.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.arctic {
+    //background-color: lightblue;
+    background-image: url("../images/images-main/arctic-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.india {
+    //background-color: red;
+    background-image: url("../images/images-main/india-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+//Header
+
+header {
+  display: flex;
+  height: 50px;
+  padding: 5px;
+  .headline {
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 2;
+
+  }
+  .guide {
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    width: 150px;
+    height: 40px;
+    background-color: salmon;
+    border-radius: $borderRadius;
+    border: 1px solid darksalmon;
+    font-family: 'Permanent Marker', cursive;
+    font-size: $mainFont;
+  }
+}
+
+* .page {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+//Sahara
+
+.page-sahara {
+  background-image: url('../psd-elements/Snake-one.png'), url("../images/sahara-new.jpg");
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: center bottom, center;
+  width: 100%;
+  top: 50px;
+  height: 300px;
+  display: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
+  min-height: calc(100vh - 50px);
+}
+
+.snake-one {
+  align-self: center;
+}
+
+.todo {
+  position: absolute;
+  left: 500px;
+  top: 60px;
+  h3 {
+    color: white;
+
+  }
+
+  .tasks {
+    overflow-y: auto;
+    max-height: 200px;
+    color: white;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo-tasks-counter {
+  color: white;
+}
+
+:-moz-placeholder {
+  margin-left: 10px;
+
+}
+
+//Amazon
+
+.page-amazon {
+  background-image: url("../images/amazon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  display: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
+  min-height: calc(100vh - 50px);
+  //min-height: 100vh;
+  overflow: hidden;
+}
+
+.animal1 {
+  width: 250px;
+  height: 180px;
+  //background-color: aliceblue;
+  position: absolute;
+  bottom: 80px;
+  right: 50px;
+  background-image: url("../psd-elements/Jaguar-psd80545.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.animal2 {
+  width: 250px;
+  height: 180px;
+  //background-color: yellow;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  background-image: url("../psd-elements/Caimn-psd84286.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.animal3 {
+  width: 180px;
+  height: 250px;
+  //background-color: violet;
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+  background-image: url("../psd-elements/spider-psd81197.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.animal4 {
+  width: 250px;
+  height: 180px;
+  //background-color: black;
+  position: absolute;
+  right: 50px;
+  bottom: 300px;
+  background-image: url("../psd-elements/ARA-PARROT-psd65471.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.animal5 {
+  width: 250px;
+  height: 180px;
+  //background-color: red;
+  position: absolute;
+  bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-image: url("../psd-elements/Poison-Dart-Frog-psd110291.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+//Arctic
+
+.page-arctic {
+  background-image: url("../images/arctic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  display: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
+  min-height: calc(100vh - 50px);
+}
+
+.place {
+  width: 200px;
+  height: 50px;
+  padding-left: 30px;
+
+}
+
+.slider ul {
+  list-style: none;
+}
+
+.slider li {
+  display: none;
+}
+
+.slider .visible {
+  display: inline-block;
+}
+
+.visible img {
+  width: 600px;
+  height: 400px;
+}
+
+.slider {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  position: absolute;
+  top: 50px;
+  right: 200px;
+
+}
+
+#prevPicture {
+  display: block;
+  float: right;
+}
+
+div.arctic-slider {
+  position: absolute;
+  top: 50px;
+  right: 900px;
+}
+
+div.page-header {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 720px;
+  margin: 0;
+
+}
+
+//India
+
+.page-india {
+  background-image: url("../images/india.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  display: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
+  min-height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
+.holycow {
+  background-image: url("../psd-elements/holycow.png");
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  top: 70px;
+  left: 720px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5px;
+}
+
+div.india-cow {
+  position: absolute;
+  bottom: 250px;
+  top: 80px;
+  width: 300px;
+  height: 320px;
+  left: 400px;
+}
+
+@media (max-width: 768px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+    //min-height: calc(100vh - 50px);
+    height: 90vh;
+
+  }
+
+  div.body aside {
+    //flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    span {
+      //display: flex;
+      align-items: center;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 40px;
+      letter-spacing: 5px;
+      text-shadow: 0 0 3px white;
+      -moz-transform: none;
+      transform: none;
+
+    }
+
+  }
+  header {
+    height: 10vh;
+  }
+
+}
