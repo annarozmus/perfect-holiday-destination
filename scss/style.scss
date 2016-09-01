@@ -11,15 +11,11 @@
   min-height: 100vh;
   flex-direction: column;
   background-color: white;
-
 }
-
-//Main elements
 
 .body {
   display: flex;
   flex: 1;
-
 }
 
 div.body aside {
@@ -38,11 +34,9 @@ div.body aside {
     font-size: 70px;
     letter-spacing: 15px;
     text-shadow: 0 0 10px white;
-
   }
 
   &.sahara {
-    //background-color: #f5951d;
     background-image: url("../images/images-main/sahara-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,7 +45,6 @@ div.body aside {
   }
 
   &.amazon {
-    //background-color: green;
     background-image: url("../images/images-main/amazon-main-two.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,7 +52,6 @@ div.body aside {
   }
 
   &.arctic {
-    //background-color: lightblue;
     background-image: url("../images/images-main/arctic-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,7 +59,6 @@ div.body aside {
   }
 
   &.india {
-    //background-color: red;
     background-image: url("../images/images-main/india-main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,8 +68,6 @@ div.body aside {
     opacity: 0.8;
   }
 }
-
-//Header
 
 header {
   display: flex;
@@ -91,7 +80,6 @@ header {
     font-size: 20px;
     margin-top: 0;
     line-height: 2;
-
   }
   .guide {
     justify-content: flex-end;
@@ -109,8 +97,6 @@ header {
 * .page {
   font-family: 'Noto Sans', sans-serif;
 }
-
-//Sahara
 
 .page-sahara {
   background-image: url('../psd-elements/Snake-one.png'), url("../images/sahara-new.jpg");
@@ -137,7 +123,6 @@ header {
   top: 60px;
   h3 {
     color: white;
-
   }
 
   .tasks {
@@ -157,10 +142,7 @@ header {
 
 :-moz-placeholder {
   margin-left: 10px;
-
 }
-
-//Amazon
 
 .page-amazon {
   background-image: url("../images/amazon.jpg");
@@ -174,14 +156,12 @@ header {
   justify-content: flex-end;
   padding: 40px;
   min-height: calc(100vh - 50px);
-  //min-height: 100vh;
   overflow: hidden;
 }
 
 .animal1 {
   width: 250px;
   height: 180px;
-  //background-color: aliceblue;
   position: absolute;
   bottom: 80px;
   right: 50px;
@@ -194,7 +174,6 @@ header {
 .animal2 {
   width: 250px;
   height: 180px;
-  //background-color: yellow;
   position: absolute;
   bottom: 0;
   left: 100px;
@@ -202,13 +181,11 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .animal3 {
   width: 180px;
   height: 250px;
-  //background-color: violet;
   position: absolute;
   bottom: 300px;
   left: 200px;
@@ -216,13 +193,11 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .animal4 {
   width: 250px;
   height: 180px;
-  //background-color: black;
   position: absolute;
   right: 50px;
   bottom: 300px;
@@ -230,13 +205,11 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .animal5 {
   width: 250px;
   height: 180px;
-  //background-color: red;
   position: absolute;
   bottom: 80px;
   margin-left: auto;
@@ -247,10 +220,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
-
-//Arctic
 
 .page-arctic {
   background-image: url("../images/arctic.jpg");
@@ -270,7 +240,6 @@ header {
   width: 200px;
   height: 50px;
   padding-left: 30px;
-
 }
 
 .slider ul {
@@ -296,7 +265,6 @@ header {
   position: absolute;
   top: 50px;
   right: 200px;
-
 }
 
 #prevPicture {
@@ -317,10 +285,7 @@ div.page-header {
   top: 50px;
   left: 720px;
   margin: 0;
-
 }
-
-//India
 
 .page-india {
   background-image: url("../images/india.jpg");
@@ -361,20 +326,16 @@ div.india-cow {
   .body {
     display: flex;
     flex-direction: column;
-    //min-height: calc(100vh - 50px);
     height: 90vh;
-
   }
 
   div.body aside {
-    //flex: 0 0 25%;
     display: flex;
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
 
     span {
-      //display: flex;
       align-items: center;
       font-family: 'Permanent Marker', cursive;
       font-size: 40px;
@@ -382,12 +343,10 @@ div.india-cow {
       text-shadow: 0 0 3px white;
       -moz-transform: none;
       transform: none;
-
     }
 
   }
   header {
     height: 10vh;
   }
-
 }

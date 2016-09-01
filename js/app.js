@@ -33,7 +33,6 @@ $(function () {
     function updateTaskCounter() {
 
         var todoTasksLength = $('li:not(.done)', todo).length;
-
         $('.todo-tasks-counter span', todo).text(todoTasksLength);
     }
 
@@ -117,17 +116,13 @@ $(function () {
 
 
     $(".back-button").on("click", function () {
-
         placeChoices.css("display", "flex");
         $('.page').hide();
-
     });
 
     $(".back").on("click", function () {
         placeChoices.css("display", "flex");
-
     })
-
 });
 
 
